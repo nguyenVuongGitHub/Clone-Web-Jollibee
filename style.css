@@ -1,0 +1,758 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    height: 135px;
+    width: 100%;
+    z-index: 1;
+    top : 0;
+}
+@font-face {
+    font-family: "Merge Black W00 Regular";
+    src: url("https://db.onlinewebfonts.com/t/870c14ea660dc49cbcf9c92af21392af.eot");
+    src: url("https://db.onlinewebfonts.com/t/870c14ea660dc49cbcf9c92af21392af.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/870c14ea660dc49cbcf9c92af21392af.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/870c14ea660dc49cbcf9c92af21392af.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/870c14ea660dc49cbcf9c92af21392af.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/870c14ea660dc49cbcf9c92af21392af.svg#Merge Black W00 Regular")format("svg");
+}
+main{
+    font-family: 'MergeBlack',sans-serif;
+    margin-top: 135px;
+    overflow-x: hidden;
+}
+.header {
+    border-top: 8px solid #ffc522;
+    background-color: #e31837;  
+    height: 100%;
+    width: 100%;
+}
+.header .header-content ul {
+    list-style: none;
+}
+.header .header-content a {
+    color: white ;
+    text-decoration: none;
+}
+.header .header-content ul li {
+    border-radius: 5px;
+    padding:10px 10px ;
+}
+.header .header-content ul li:hover{
+    background-color: #F4D2D6;
+}
+.header .header-content ul li:hover a {
+    color: #e31837;
+}
+.header .header-content {
+    width: 100%;
+    height: 100px;
+    display: flex;    
+    position: relative;
+}
+.header .header-content img{
+    padding-left: 50px;
+}
+
+.header-content ul {
+    display: inline-flex;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 10%;
+}
+.header .header-content li {
+    color: white;
+    padding: 0 15px;
+    font-weight: bold;
+    /* padding-top: 80px; */
+}
+.header .header-content li:hover {
+    cursor: pointer;
+}
+.header .header-paner {
+    background-color: #ffc522;
+    width: 30%;
+    height: 30px;
+    margin-left: 70%;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 0px;
+    position: relative;
+    display : flex;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-paner .language {
+    padding-left: 30px;
+    position: relative;
+}
+.header-paner .language #vietnamese {
+    margin-right: 10px;
+    color: #e31837;
+}
+.language {
+    display: flex;
+    margin-right: 50px;
+    gap: 5px;
+
+}
+.login {
+    display: flex;
+    gap: 5px;
+}
+.login a {
+    text-decoration: none ;
+    color: #333;
+    padding: 5px;
+    font-weight: bold;
+}
+.location #hcm {
+    gap: 5px;
+    display: flex;
+    margin-right: 50px;
+}
+.ghtn {
+    position: absolute;
+    right: 0;
+    padding-top: 21px;
+}
+.pick #p {
+    width: 100px;
+    height: 50px;
+    background-color: #ffc522;
+    color: #333;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    font-size: larger;
+}
+.pick {
+
+    position: absolute;
+    right: 300px;
+    top : 30%
+}
+/* ========================================================================== */
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.img .bottom-img-wrapper{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 15px;
+    max-width: 315px;
+    width: 100%;
+    border-radius: 20px;
+}
+.bottom-img-wrapper .sub-bottom {
+    max-height: 140px;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+.sub-bottom img {
+    max-width: 510px;
+    width: 100%;
+    max-height: 50px;
+    height: 100%;
+    border-radius: 10px;
+}
+.img .bottom-img-wrapper button {
+    background-color: #ffc522;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.anGiHomNay {
+    display: flex;
+    background-color: white;
+    height: 515px;
+    gap: 5px;
+}
+.anGiHomNay img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.anGiHomNay .img1 {
+    /* z-index: 1; */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background: url(https://jollibee.com.vn/static/version1698938216/frontend/Jollibee/default/vi_VN/images/bg-wood.jpg) repeat;
+}
+.anGiHomNay .img img{
+    width: 100%;
+    height: 100%;
+    background-color: #e31837;
+    /* background: url(https://jollibee.com.vn/static/version1698938216/frontend/Jollibee/default/vi_VN/images/bg-wood.jpg) repeat; */
+}
+.anGiHomNay .text {
+    background-color: #e31837;
+    width: 150%;
+    text-align: center;
+    list-style: 50%;
+    color: white;
+    padding-top: 150px;
+    position: relative;
+}
+.anGiHomNay .text .img {
+    width: 120px;
+    height: 120px;
+    background-color: #e31837;
+    position: absolute;
+    top:20px;
+    left: 190px;
+}
+.text #text1
+{
+    font-family: 'MergeBlack',sans-serif;
+    font-size: 45px;   
+}
+.text #text1, #text2 
+{
+    margin: 0 80px;
+    margin-top: 10px;
+}
+/* =======================================================================================  */
+.widget-service-wrapper {
+    background: url(https://jollibee.com.vn/static/version1698938216/frontend/Jollibee/default/vi_VN/Levinci_Widget/images/jollibee-kid-party-bg.png) repeat;
+    width: 100%;
+    background-size: contain;
+    padding: 70px 20px;
+}
+.title-wrapper {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.title-wrapper .title {
+    padding: auto;
+    padding-bottom: 50px;
+    color: #e31837;
+    font-size: xx-large;
+}
+.title-wrapper .description {
+    color: black;
+}
+.widget-service-wrapper .content {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 50px;
+}
+.content-1 {
+    margin: 0 50px;
+}
+.content-1 .cc {
+    max-width: 309px;
+    width: 100%;
+    
+}
+.content-1 .cc2{
+    max-width: 309px;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.widget-service-wrapper .text {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    gap: 240px;
+    color : #42210b;    
+}
+.widget-service-wrapper .text h4
+{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.btn {
+    width: 180px;
+    height: 47px;
+    color: #fff;
+    background-color: #e31837;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* ============================================= */
+.JollibeXinChao {
+    height: 600px;
+    /* width: 150%; */
+    background: url(https://jollibee.com.vn/media/about_bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* position: relative; */
+}
+.JollibeXinChao .content {
+    text-align: center;
+    justify-content: center;
+    /* position: absolute; */
+    /* padding-top: 30%; */
+    margin: 0 650px;
+    padding-top: 200px;
+}
+.JollibeXinChao .content h3 {
+    margin-bottom: 50px;
+    color: rgb(227, 24, 55);
+    font-size: 36px;
+}
+.JollibeXinChao .oder {
+    padding-top: 50px;
+}
+/* ====================================================== */
+.findStore
+{
+    display: flex;
+    height: 145px;
+    background-color: #ed7d22;
+    /* gap: 50px; */
+    position: relative;
+}
+.findStore .title {
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    font-size: 35px;
+    margin-left: 50px;
+}
+.findStore .option1,.option2
+{
+    position: absolute;
+    top: 50%;
+    width: 570px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.findStore .option1 {
+    left: 25%;
+}
+.findStore .option2 {
+    left: 58%;
+}
+.findStore .btn {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 120px;
+}
+/* ============================================================= */
+
+.TINTUC {
+    padding: 70px 20px;
+    height: 690px;
+    justify-content: center;
+    text-align: center;
+}
+.TINTUC .title {
+    font-size: 36px;
+    font-family: 'MergeBlack',sans-serif;
+    color: #e31837;
+    text-transform: uppercase;
+}
+.TINTUC .content {
+    display: flex;
+    /* padding: 0 10px; */
+}
+.TINTUC .content .content-2
+{
+    margin: 10px 0;
+    padding-top: 20px;
+}
+.TINTUC .content .content-2 img {
+    width: 292px;
+    height: 209px;
+}
+.TINTUC .content .content-text {
+    margin: 0 90px;
+}
+/* =================================================================== */
+
+footer {
+    padding: 50px 100px;
+    display: flex;
+    background-color: #e31837;
+    gap: 30px;
+    color: #fff;
+}
+footer .info-address {
+    width: 570px;
+}
+footer .info-address p {
+    padding: 10px;
+}
+footer .link-info ul {
+    list-style: none;
+}
+footer .link-info li {
+    margin: 10px;
+
+}
+footer .link-info a {
+    text-decoration: none;
+    color: #fff;
+}
+footer .connect i,img{
+    margin-top: 10px;
+}
+footer .connect .ggplay-appstore img
+{
+    width: 150px;
+}
+/* ====================================================== */
+
+main .history {
+    width: 100%;
+    height: 400px;
+    background-color: #ffc522;
+    position: relative;
+}
+main .history .background{
+    position: absolute;
+    top: -85px;
+    left: 30%;
+}
+main .history .background img {
+    width: 390px;
+}
+main .history .content {
+    position: absolute;
+    left: 45%;
+    top: 30px;
+    padding: 0 150px;
+}
+main .history .content .title {
+    color: #e31837;
+}
+main .history .content .title, p {
+    padding-bottom: 35px;
+}
+main .sub-history {
+    display: flex;
+    /* background-color: ; */
+    /* justify-content: center; */
+}
+main .sub-history img {
+    width: 478px;
+    height: 326px;
+}
+main .sub-history .content {
+    width: 100%;
+    background-color: #e31837;
+}
+main .sub-history .content {
+    display: flex;
+    position: relative;
+    /* gap: 35px; */
+}
+main .sub-history .content img {
+    position: absolute;
+    max-width: 43px;
+    max-height:43px;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 30px; */
+}
+main .sub-history .content img:nth-child(1)
+{
+    top: 45%;
+    left: 40%;
+}
+main .sub-history .content img:nth-child(2)
+{
+    top: 45%;
+    left: 55%;
+}
+main .jollibeeVietNam 
+{
+    padding: 0 435px;
+    height: 486px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F1E6;
+}
+main .jollibeeVietNam h3 {
+    margin-bottom: 30px;
+    color: #e31837;
+    font-size: 45px;
+}
+main .jollibeeVietNam p {
+    margin: 10px 0;
+}
+
+main .cacGiaTri{
+    position: relative;
+}
+main .cacGiaTri img {
+    filter: brightness(50%);
+}
+main .cacGiaTri .content .title {
+    font-size: 40px;
+    /* position: absolute; */
+    padding: 100px 0;
+    
+}
+main .cacGiaTri .content {
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+}
+main .cacGiaTri .content .sub-content {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: bold; 
+    width: 100%;
+}
+
+
+.sub-content-item
+{
+    width: 600px;
+    height: 160px;
+}
+
+.sub-content-item .text{
+    padding: 0 15px;
+    margin-top: 16px;
+}
+
+main .cacGiaTri .content .first,.second,.third
+{
+    width: 556px;
+    max-height: 600px;
+    height: 100%;
+}
+main .cacGiaTri .content .sub-content .first,.second,.third
+{
+    padding: 0 100px;
+}
+
+main .cacGiaTri .content
+{
+    width: 100%;
+    position: absolute;
+}
+main .suMenh {
+    position: relative;
+    /* overflow: auto; */
+}
+main .suMenh img {
+    min-height: 500px;
+}
+main .suMenh .content {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    left: 36%;
+    padding: 0px 200px;
+} 
+main .suMenh .content .title p{
+    color: #e31837;
+    font-size: 40px;
+}
+main .suMenh .content p 
+{
+    padding: 30px;
+    font-size: 20px;
+}
+
+main .cacGiaTri .sub-content .third{
+    padding: 50px 0;
+    gap : 150px;
+    font-size: 30px;
+    display: flex;
+    font-weight: bold;
+}
+/* =============================================== */
+main .nav {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+main .nav ul {
+    position: absolute;
+    background-color: #F4D2D6;
+    display: flex;
+    list-style: none;
+    width: 1410px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 25px 150px;
+    /* padding-bottom: 25px; */
+    /* padding: 0 500px; */
+}
+main .nav ul li {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0 10px;
+}
+
+main .nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .nav ul li img {
+    width: 120px;
+    height: 72px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main .nav ul li:hover span{
+    color: #e31837;
+}
+main .nav ul li:hover img {
+    transform: scale(1.2); /* Phóng to hình ảnh khi hover */
+}
+main #menu {
+    min-width: 1200px;
+    background: url("https://jollibee.com.vn/static/version1699974795/frontend/Jollibee/default/vi_VN/images/bg-top.png"), url("https://jollibee.com.vn/static/version1699974795/frontend/Jollibee/default/vi_VN/images/bg-bottom.png");
+    background-repeat: no-repeat;
+    background-position: center top,center calc(100% - 80px);
+    background-size: 100% auto,100% auto;
+    width: 100%;
+    position: relative;
+    height: 1500px;
+    /* height: 100%; */
+    overflow-y: hidden;
+}
+main #menu .list-items {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: calc(334px*3);
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+main #menu .list-items .item {
+    padding: 10px 10px;
+}
+main #menu .list-items .item img {
+    width: 268px;
+    height: 268px;
+}
+main #menu .list-items .item .sub-item {
+    width: 300px;
+}
+main #menu .list-items .item .sub-item span {
+    font-weight: bolder;
+    display: inline-flex;
+    height: 54px;
+}
+main #menu .list-items .item .sub-item .price {
+    font-size: 20px;
+    font-weight: bolder;
+    color :#e31837;
+    padding: 30px 0;
+}
+main #menu .list-items .item .sub-item .button {
+    width: 163px;
+    height: 53px;
+    border: none;
+    background-color: #e31837;
+    color: #F5F1E6;
+    border-radius: 5px;
+}
+main #button-buy-now {
+    position: absolute;
+    /* bottom: -885px; */
+    right: 80px;
+}
+main #button-buy-now .buy-now {
+    width: 246px;
+    height: 50px;
+    border: none;
+    background-color: #ffc522;
+    color: #333;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    /* border-radius: 5px; */
+}
+main .container {
+    position: relative;
+    height: 1200px;
+}
+main .container .title {
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e31837;
+    font-weight: bold;
+    font-size: 30px;
+}
+main .container .form {
+    position: absolute;
+    top:42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .container .form .form-item{
+    padding: 15px;
+}
+main .container .form .form-item span {
+    display: inline-flex;
+    width: 100%;
+    background-color: #ccc;
+}
+main .container .form .form-item input, select
+{
+    width: 660px;
+    height: 50px;
+    border-radius: 5px;
+    border: #333 solid 1px;
+}
+main .container .form .accept {
+    position: absolute;
+    left: 15px;
+}
+main .container .form .accept input,button {
+    margin: 10px 0;
+}
+main .container .form .accept input {
+    width: 23px;
+    height: 23px;
+    box-shadow:none;
+}
+main .container .form .accept button 
+{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.focus {
+    box-shadow: 0 0 5px 1px #00699d;
+}
